@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:background="@drawable/background_main">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City name"
+            android:textSize="22dp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/txv_cityName"/>
+
+        <TextView
+            android:layout_below="@+id/txv_cityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thu, 8/24 20:20"
+            android:textColor="@color/colorGray"
+            android:id="@+id/txv_time"/>
+
+        <TextView
+            android:id="@+id/txv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12°C"
+            android:textSize="50sp"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/txv_time"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/txv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="30sp"
+            android:textColor="@color/colorGray"
+            android:layout_below="@+id/txv_temp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txv_feelsLike"
+            android:text="Feel like"
+            android:layout_below="@id/txv_status"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorGray"
+            android:textSize="19sp"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txv_summary"
+            android:text="Partly cloudy starting later tonight, continuing until tomorrow afternoon."
+            android:layout_below="@id/txv_feelsLike"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorGray" />
+
+        <TextView
+            android:layout_marginTop="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txv_summary"
+            android:text="DETAIL"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/txv_detail"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_feature"
+            android:orientation="horizontal"
+            android:layout_below="@+id/txv_detail"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll_humidity"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imv_humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_humidity"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Humidity"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50%"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="19sp"
+                    android:id="@+id/txv_humidity"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll_clouds"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imv_clound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_clouds"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clouds"
+                    android:textColor="@color/colorGray"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50%"
+                    android:id="@+id/txv_cloudCover"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="19sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll_wind"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imv_wind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_wind"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wind speed"
+                    android:textColor="@color/colorGray"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 m/s"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="19sp"
+                    android:id="@+id/txv_windSpeed"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_feature2"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ll_feature"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll_view"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imv_uv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_sun_uv"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UV Index"
+                    android:textColor="@color/colorGray"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12km"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="19sp"
+                    android:id="@+id/txv_uv"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll_dewPoint"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imv_dewPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_dewpoit"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dew Point"
+                    android:textColor="@color/colorGray"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:id="@+id/txv_dewPoint"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="19sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll_pressure"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imv_pressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_pressure"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pressure"
+                    android:textColor="@color/colorGray"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000mb"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="19sp"
+                    android:id="@+id/txv_pressure"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_feature2"
+            android:text="THE NEXT 24 HOURS"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/txv_nextHours"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_view_weatherHourly"
+            android:layout_below="@+id/txv_nextHours">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/recycler_view_weatherHourly"
+            android:text="THE NEXT DAYS"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/txv_theNextDays"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txv_theNextDays"
+            android:id="@+id/recycler_view_weatherDaily">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TravelEveryWhere</string>
+    <string name="google_key">AIzaSyDBLLJuXzJ1Jf7rQYSY1IjQUMCtjaVb31Y</string>
+    <string name="question">Where do you go?</string>
+    <string name="suggestions_place">Suggested place in the country</string>
+    <string name="suggestions_place_in_the_world">Suggested place outside the country</string>
+    <string name="review_this_place">Related images</string>
+    <string name="involve_place">Related place</string>
+    <string name="see_way">See the way</string>
+    <string name="preview_weather">Check the weather</string>
+    <string name="input_place">Enter the location</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_5dp">
+
+    <TextView
+        android:textSize="@dimen/text_15sp"
+        android:layout_gravity="center"
+        android:id="@+id/txv_food_place_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_5dp"
+        android:text="Name" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/imv_food_place_photo"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:src="@drawable/image_da_lat"/>
+
+    <TextView
+
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:id="@+id/txv_vicinity"
+        android:text="vicinity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLightGray"
+        android:layout_marginTop="@dimen/margin_5dp"/>
+
+</LinearLayout>

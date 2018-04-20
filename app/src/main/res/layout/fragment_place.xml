@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_15dp"
+            android:text="Ho Chi Minh City, Viet Nam"
+            android:textSize="@dimen/text_20sp" />
+
+        <TextView
+            android:textSize="@dimen/text_18sp"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/review_this_place" />
+
+        <GridView
+            android:gravity="center"
+            android:numColumns="1"
+            android:id="@+id/grid_view_photo_place"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp" />
+
+        <TextView
+            android:textSize="@dimen/text_18sp"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/involve_place" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_related_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/margin_15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_view_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/see_way"/>
+
+            <Button
+                android:id="@+id/btn_view_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preview_weather" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

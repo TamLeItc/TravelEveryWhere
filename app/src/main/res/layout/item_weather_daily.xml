@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Day of week"
+        android:id="@+id/txv_dayOfWeek"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day"
+        android:id="@+id/txv_day"
+        android:textSize="18dp"
+        android:layout_below="@+id/txv_dayOfWeek"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imv_dailyIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/txv_dayOfWeek"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txv_tempMax"
+        android:text="max"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorRed"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/txv_tempMax"
+        android:text="min"
+        android:id="@+id/txv_tempMin"
+        android:textColor="@color/colorBlue"
+        android:textSize="18dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txv_humidityAndWindSpeed"
+        android:layout_below="@+id/txv_tempMax"
+        android:layout_alignParentRight="true"
+        android:text="50% | 5m/s"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="18dp"/>
+
+
+</RelativeLayout>

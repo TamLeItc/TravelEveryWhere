@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_8dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_place"
+        android:layout_centerVertical="true"
+        android:id="@+id/imv_place" />
+
+    <LinearLayout
+        android:id="@+id/ll_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imv_place"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txv_main_text_place"
+            android:text="Tien Phuoc"
+            android:textSize="@dimen/text_18sp"
+            android:textColor="@color/colorDarkGray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:text="Second text"
+            android:textSize="@dimen/text_15sp"
+            android:id="@+id/txv_second_text_place"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
